@@ -1,4 +1,7 @@
 <?php 
+/**
+ * accepts variable functions
+ */
     function make_pipeline(...$functions) {
     return  function($arg) use ($functions)
     {

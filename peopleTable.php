@@ -19,7 +19,7 @@ $people = [
      echo '<td> ' .$row['first_name']. ' </td>';
      echo '<td> '.$row['last_name']. ' </td>';
    //   echo '<td><input type="button" value="Say Hi!" onclick="alert(\'Name:'.$row['first_name'].'\',\''.$row['email'].'\')" /></td>';
-   echo '<td><input type="button" value="Say Hi!" onclick="alert(\'Name:'.$id.'\'+ \'  \' + \'Email:'.$email.'\')" /></td>';
+   echo '<td><input type="button" value="Submit!" onclick="alert(\'Name:'.$id.'\'+ \'  \' + \'Email:'.$email.'\')" /></td>';
      echo '</tr>';
      echo '<br>';
     
