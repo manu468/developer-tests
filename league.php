@@ -22,7 +22,6 @@ class LeagueTable
 
     public function playerRank(int $rank)
     {
-    if ($rank <= $this->stats['index']){
     $ranks = $this->stats;
     // Uasort allows us to move elements up or down the array in
     uasort($ranks, function ($a, $b) {
@@ -40,13 +39,9 @@ class LeagueTable
         }
         return $a['index'] > $b['index'] ? 1 : -1;
         });
-        
         $ranks = array_keys($ranks);
         return $ranks[--$rank];
-    } else { 
-        return "Entered rank is greter than the number of players, Please enter a valid rank";
-    };
-}
+    }
 }
 
 $table = new LeagueTable(array('Mike', 'Chris', 'Arnold'));
@@ -55,4 +50,4 @@ $table->recordResult('Mike', 4);
 $table->recordResult('Arnold', 5);
 $table->recordResult('Chris', 5);
 
-echo $table->playerRank(4);
+echo $table->playerRank(1);
